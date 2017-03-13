@@ -78,9 +78,9 @@
                     <h2 class="section-heading">Now You owe me</h2>
                     <hr class="light">
                     <p class="text-faded">All I do is 'Lin Lin Lin' No matter what.</p>
-                    <a onclick="randomFact()" class="page-scroll btn btn-default btn-xl sr-button">Random Facts</a>
+                    <a onclick="randomFact()" class="page-scroll btn btn-default btn-xl sr-button">Click for Random Facts about Xi</a>
                     <hr />
-                    <p id="randomFactp" class="text-center"></p>
+                    <label id="randomFactp" class="text-center"></label>
                 </div>
             </div>
         </div>
@@ -115,16 +115,26 @@
 
 <script>
 
-    var arrRayLin = ["Ray 'the GOAT' Lin",
-                     "Ray 'we the best' Lin", 
-                     "Ray 'Ray' Lin", "Xi Lin", 
-                     "Ray \n 'all I do is Lin Lin Lin LIN. No matter what'\n  Lin"];        
+    var arrRayLin = ["Xi is also called: Ray 'the GOAT' Lin",
+                     "Xi is also called: Ray 'we the best' Lin", 
+                     "Xi is also called: Ray 'Ray' Lin", 
+                     "Xi is also called: Xi Lin", 
+                     "Xi is also called: Ray \n 'all I do is Lin Lin Lin LIN. No matter what'\n  Lin",
+                     "Ray has mastered the art of driving and is known as a 'Master Driver'",
+                     "Ray hates rice",
+                     "Ray likes the 'Kodi Box'",
+                     "Ray likes rice with hotpot",
+                     "Xi is Ray but Ray is not Xi.",
+                     "He is currently the World Champion of Ping Pong",
+                     "Ray's arch rival is the Vietnamese Ninja: Hu Tran",
+                     "CNMB"
+                    ];        
    
 
    
    function randomFact()
    {
-       var rayLinNumber = getRandomInt(0, 4);
+       var rayLinNumber = getRandomInt(0, 12);
       document.getElementById("randomFactp").innerHTML = arrRayLin[rayLinNumber];
    }
 
