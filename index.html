@@ -78,7 +78,8 @@
                     <h2 class="section-heading">Now You owe me</h2>
                     <hr class="light">
                     <p class="text-faded">All I do is 'Lin Lin Lin' No matter what.</p>
-                    <a href="#about" class="page-scroll btn btn-default btn-xl sr-button">Random Facts</a>
+                    <a onclick="randomFact()" class="page-scroll btn btn-default btn-xl sr-button">Random Facts</a>
+                    <p id="randomFactp" class="text-center"></p>
                 </div>
             </div>
         </div>
@@ -114,8 +115,14 @@
 <script>
 
     var arrRayLin = ["Ray 'the GOAT' Lin","Ray 'we the best' Lin", "Ray 'Ray' Lin", "Xi Lin", "Ray \n 'all I do is Lin Lin Lin LIN. No matter what'\n  Lin"];        
-    var rayLinNumber = getRandomInt(0, 4);
-    //alert(arrRayLin[rayLinNumber]);
+   
+
+   
+   function randomFact()
+   {
+       var rayLinNumber = getRandomInt(0, 4);
+      document.getElementById("randomFactp").innerHTML = "New text!";
+   }
 
 </script>
 
