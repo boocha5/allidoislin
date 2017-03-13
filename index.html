@@ -144,10 +144,17 @@
     
    
    function randomFact()
-   {
+   {  
+      if(arrRayLin.length > 0)
+      {
        var rayLinNumber = getRandomInt(0, arrRayLin.length - 1);
-       arrRayLin.splice(rayLinNumber, 1);
        document.getElementById("randomFactp").innerHTML = arrRayLin[rayLinNumber];
+       arrRayLin.splice(rayLinNumber, 1);
+      }
+      else
+      {
+         document.getElementById("randomFactp").innerHTML = "Subscribe to my newsletter to receive more facts.";
+      }
    }
    
    
