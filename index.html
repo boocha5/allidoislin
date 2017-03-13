@@ -140,14 +140,15 @@
                      "Xi is Ray but Ray is not Xi.",
                      "He is currently the World Champion of Ping Pong",
                      "Ray's arch rival is the Vietnamese Ninja: Hu Tran",
-                     "CNMB"
+                     "CNMB",
+                     "Ray wants to be the Prime Minister of Canada... and he will be"
                     ];        
    
 
    
    function randomFact()
    {
-       var rayLinNumber = getRandomInt(0, 12);
+       var rayLinNumber = getRandomInt(0, arrRayLin.length - 1);
       document.getElementById("randomFactp").innerHTML = arrRayLin[rayLinNumber];
    }
    
