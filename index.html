@@ -71,6 +71,14 @@
             </div>
         </div>
     </header>
+   <script>
+      // self executing function here
+      (function() {
+         // your page initialization code here
+         // the DOM will be available here
+         randomFact();
+      })();
+      </script>
      <section class="bg-primary" id="about">
         <div class="container">
             <div class="row">
@@ -79,10 +87,11 @@
                     <hr class="light">
                     <p class="text-faded">All I do is 'Lin Lin Lin' No matter what.</p>
                     <a onclick="randomFact()" class="page-scroll btn btn-default btn-xl sr-button">Click for Random Facts about Xi</a>
-                    <blockquote class="blockquote">
-                     <p id="randomFactp" class="text-center"></p>
-                   </blockquote>
+                    
                 </div>
+               <blockquote class="blockquote">
+                     <p id="randomFactp" class="text-center"></p>
+                </blockquote>
             </div>
         </div>
     </section>
@@ -138,6 +147,8 @@
        var rayLinNumber = getRandomInt(0, 12);
       document.getElementById("randomFactp").innerHTML = arrRayLin[rayLinNumber];
    }
+   
+   
 
 </script>
 
