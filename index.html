@@ -79,6 +79,7 @@
                     <hr class="light">
                     <p class="text-faded">All I do is 'Lin Lin Lin' No matter what.</p>
                     <a onclick="randomFact()" class="page-scroll btn btn-default btn-xl sr-button">Random Facts</a>
+                    <hr />
                     <p id="randomFactp" class="text-center"></p>
                 </div>
             </div>
@@ -114,14 +115,17 @@
 
 <script>
 
-    var arrRayLin = ["Ray 'the GOAT' Lin","Ray 'we the best' Lin", "Ray 'Ray' Lin", "Xi Lin", "Ray \n 'all I do is Lin Lin Lin LIN. No matter what'\n  Lin"];        
+    var arrRayLin = ["Ray 'the GOAT' Lin",
+                     "Ray 'we the best' Lin", 
+                     "Ray 'Ray' Lin", "Xi Lin", 
+                     "Ray \n 'all I do is Lin Lin Lin LIN. No matter what'\n  Lin"];        
    
 
    
    function randomFact()
    {
        var rayLinNumber = getRandomInt(0, 4);
-      document.getElementById("randomFactp").innerHTML = "New text!";
+      document.getElementById("randomFactp").innerHTML = arrRayLin[rayLinNumber];
    }
 
 </script>
