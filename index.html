@@ -141,12 +141,13 @@
                      "Ray wants to be the Prime Minister of Canada... and he will be"
                     ];        
    
-
+    
    
    function randomFact()
    {
        var rayLinNumber = getRandomInt(0, arrRayLin.length - 1);
-      document.getElementById("randomFactp").innerHTML = arrRayLin[rayLinNumber];
+       arrRayLin.splice(rayLinNumber, 1);
+       document.getElementById("randomFactp").innerHTML = arrRayLin[rayLinNumber];
    }
    
    
