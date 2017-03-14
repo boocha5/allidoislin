@@ -79,7 +79,7 @@
                     <h2 class="section-heading">Now You owe me</h2>
                     <hr class="light">
                     <p class="text-faded">All I do is 'Lin Lin Lin' No matter what.</p>
-                    <a onclick="randomFact()" class="page-scroll btn btn-default btn-xl sr-button">Click for Random Facts about Xi</a>
+                    <a id="aRandomFact" onclick="randomFact()" class="page-scroll btn btn-default btn-xl sr-button">Click for Random Facts about Xi</a>
                     
                 </div>
                
@@ -154,6 +154,7 @@
       else
       {
          document.getElementById("randomFactp").innerHTML = "Subscribe to my newsletter to receive more facts.";
+         document.getElementById("aRandomFact").style.visibility = "hidden";
       }
    }
    
